@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   :root{
-    --navbar-height: 50px;
+    --Navbar-height: 50px;
     --footer-height: 100px;
   }
   html, body {

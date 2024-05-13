@@ -20,8 +20,10 @@ declare module "styled-components" {
       extraLarge: string;
     };
     layout: {
-      navbar: {
+      Navbar: {
         backgroundColor: string;
+        textColor: string;
+        textSize: string;
       };
       footer: {
         backgroundColor: string;
@@ -47,7 +49,11 @@ export const defaultTheme: DefaultTheme = {
     danger: "#dc3545",
   },
   layout: {
-    navbar: { backgroundColor: "#007bff" },
+    Navbar: {
+      backgroundColor: "#007bff",
+      textColor: "#ffffff",
+      textSize: "18px",
+    },
     footer: { backgroundColor: "#007bff" },
   },
   fontSizes: {

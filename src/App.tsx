@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import GlobalStyles from "./App.styles";
 import MainLayout from "./components/Layout/MainLayout";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -5,12 +6,14 @@ import AppRoutes from "./routes";
 
 function App() {
   return (
-    <ThemeProvider>
-      <GlobalStyles />
-      <MainLayout>
-        <AppRoutes />
-      </MainLayout>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <GlobalStyles />
+        <MainLayout>
+          <AppRoutes />
+        </MainLayout>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
