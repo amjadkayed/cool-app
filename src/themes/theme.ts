@@ -7,6 +7,7 @@ declare module "styled-components" {
       primary: string;
       secondary: string;
       background: string;
+      rootBackground: string;
       text: string;
       success: string;
       info: string;
@@ -27,6 +28,8 @@ declare module "styled-components" {
       };
       footer: {
         backgroundColor: string;
+        textColor: string;
+        textSize: string;
       };
     };
     spacing: {
@@ -41,6 +44,7 @@ export const defaultTheme: DefaultTheme = {
   colors: {
     primary: "#007bff",
     secondary: "#6c757d",
+    rootBackground: "#0A090B",
     background: "#ffffff",
     text: "#212529",
     success: "#28a745",
@@ -50,11 +54,15 @@ export const defaultTheme: DefaultTheme = {
   },
   layout: {
     Navbar: {
-      backgroundColor: "#007bff",
+      backgroundColor: "#3c3c3c",
       textColor: "#ffffff",
       textSize: "18px",
     },
-    footer: { backgroundColor: "#007bff" },
+    footer: {
+      backgroundColor: "#3c3c3c",
+      textColor: "#ffffff",
+      textSize: "18px",
+    },
   },
   fontSizes: {
     small: "0.8rem",

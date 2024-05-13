@@ -2,8 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   :root{
-    --Navbar-height: 50px;
-    --footer-height: 100px;
+    --navbar-height: 50px;
+    --footer-height: 90px;
+    --x-padding: 50px;
+    background-color: ${(props) => props.theme.colors.rootBackground};
   }
   html, body {
     height: 100%;
@@ -11,6 +13,12 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'GomariceMixBit';
+    color : white; // TODO: remove it
+  }
+
+  a {
+    text-decoration: none;
   }
 
   #root {

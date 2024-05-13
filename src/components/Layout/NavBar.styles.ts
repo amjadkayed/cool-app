@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.header`
-  height: var(--Navbar-height);
+  height: var(--navbar-height);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: ${(props) => props.theme.layout.Navbar.backgroundColor};
   position: fixed;
   top: 0;
@@ -11,6 +14,9 @@ export const StyledNavbar = styled.header`
 `;
 
 export const NavbarContainer = styled.div`
+  padding-right: var(--x-padding);
+  padding-left: var(--x-padding);
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 50px;
