@@ -24,6 +24,7 @@ declare module "styled-components" {
       Navbar: {
         backgroundColor: string;
         textColor: string;
+        textColorHover: string;
         textSize: string;
       };
       footer: {
@@ -56,6 +57,7 @@ export const defaultTheme: DefaultTheme = {
     Navbar: {
       backgroundColor: "#3c3c3c",
       textColor: "#ffffff",
+      textColorHover: "#6c757d",
       textSize: "18px",
     },
     footer: {

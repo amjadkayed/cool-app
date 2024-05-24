@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Crush-Bubble";
+  src: url("./Crush_Bubble/Crush_Bubble.otf");
+  font-weight: normal;
+  font-style: normal;
+}

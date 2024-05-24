@@ -8,15 +8,14 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.rootBackground};
   }
   html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    font-family: 'GomariceMixBit';
+    font-family: 'Crush-Bubble';
     color : white; // TODO: remove it
   }
-
+  
   a {
     text-decoration: none;
   }
